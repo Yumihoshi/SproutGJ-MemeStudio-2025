@@ -1,5 +1,6 @@
-# SproutGJ-MemeStudio-2025
-萌芽GJ 2025
+Resonant Steps: A Chorded Aria
+
+*Sprout Game Jam 2025 project*
 
 [![猫猫计数器](https://starry-trace-sky-moe-counter.vercel.app/get/@SproutGJ-MemeStudio-2025?theme=rule34)](https://github.com/StarrySky-skyler/SproutGJ-MemeStudio-2025)
 
@@ -7,6 +8,48 @@
 [![游戏引擎Unity6000.0.28f1c1](https://img.shields.io/badge/游戏引擎-Unity6000.0.28f1c1-pink.svg?style=for-the-badge)](#)
 
 ![游戏截图封面](cover.png)
+
+## Overview
+
+Resonant Steps: A Chorded Aria is a Unity puzzle game built around Sokoban-style box-pushing. Its pixel-art presentation, dialogue-driven story, and varied level mechanics shape a compact adventure in which players move boxes to solve puzzles.
+
+## Technology Stack
+
+- Unity 6000.0.28f1c1 and C#
+- Universal Render Pipeline (URP)
+- Unity Input System
+- Unity Tilemap and Timeline
+- Newtonsoft.Json for save data and configuration
+- UGUI
+- DOTween, Text Animator, IngameDebugConsole, and Pixel Crushers Dialogue System
+
+## Features
+
+- **MVC architecture and data-driven configuration:** Separates model, view, and gameplay responsibilities, with ScriptableObjects used for configuration.
+- **State-machine-driven box behavior:** Supports standard boxes, ice-sliding boxes, and teleporting boxes through a shared state-machine system.
+- **Level progression and undo:** Organizes level transitions and supports multi-step undo as part of the core puzzle loop.
+- **Multiple save slots:** Uses JSON-based save data.
+- **Dialogue and text animation:** Integrates Dialogue System and Text Animator for story presentation.
+- **Pixel-art presentation:** Organizes art, UI, effects, and audio resources for extension and replacement.
+
+## Project Structure
+
+- `Assets/Scripts/Tsuki/` — Main gameplay code, including MVC components, managers, entities, effects, and interfaces.
+- `Assets/Scripts/AnRan12581/` — Framework utilities, singleton patterns, save-system code, and basic interactions.
+- `Assets/Scripts/ifancy/` — Shared UI, volume, and scene-transition scripts.
+- `Assets/Scenes/Tsuki/` — Level scenes named using the `LevelX-YSceneZ` pattern.
+- `Assets/Prefabs/Tsuki/` — Gameplay objects and UI prefabs.
+- `Assets/Resources/Tsuki/` — ScriptableObject configuration for game and player models.
+- `Assets/StreamingAssets/GameJamSaveSystem/` — Save templates and runtime data.
+- `Packages/manifest.json` — Unity package dependencies.
+
+## Build and Run
+
+Open the project in Unity **6000.0.28f1c1** or a compatible Unity 6 installation, then open a gameplay scene under `Assets/Scenes/Tsuki/`. The repository does not specify a single startup scene or standalone build procedure; select the intended scene in Unity before running or building.
+
+
+# SproutGJ-MemeStudio-2025
+萌芽GJ 2025
 
 ## 技术栈
 
